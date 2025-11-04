@@ -6,7 +6,7 @@
 /*   By: abounoua <abounoua@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 14:22:28 by abounoua          #+#    #+#             */
-/*   Updated: 2025/11/04 14:26:51 by abounoua         ###   ########lyon.fr   */
+/*   Updated: 2025/11/04 15:36:48 by abounoua         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,6 @@ void	ft_puterr(char *err)
 	}
 }
 
-void	ft_putstr(char *str)
-{
-	while (*str != '\0')
-	{
-		write(1, str, 1);
-		str++;
-	}
-}
-
 void	display_file(char *filename)
 {
 	int		fd;
@@ -57,7 +48,7 @@ void	display_file(char *filename)
 	buffer[size] = '\0';
 	while (size != 0)
 	{
-		ft_putstr(buffer);
+		write(1, buffer, size);
 		size = read(fd, buffer, 4096);
 		buffer[size] = '\0';
 	}
