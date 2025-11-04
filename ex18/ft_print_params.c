@@ -6,16 +6,11 @@
 /*   By: abounoua <abounoua@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 16:38:41 by abounoua          #+#    #+#             */
-/*   Updated: 2025/11/03 16:46:58 by abounoua         ###   ########lyon.fr   */
+/*   Updated: 2025/11/04 15:03:03 by abounoua         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
