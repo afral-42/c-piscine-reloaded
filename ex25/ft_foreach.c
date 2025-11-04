@@ -6,7 +6,7 @@
 /*   By: abounoua <abounoua@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 12:31:58 by abounoua          #+#    #+#             */
-/*   Updated: 2025/11/04 12:40:39 by abounoua         ###   ########lyon.fr   */
+/*   Updated: 2025/11/04 14:36:07 by abounoua         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_foreach(int *tab, int length, void (*f)(int))
 		i++;
 	}
 }
-
+/*
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -55,3 +55,4 @@ int	main(void)
 	int	tab[] = {1, 2, 3, 4, 5};
 	ft_foreach(tab, 5, &ft_putnbr);
 }
+*/
