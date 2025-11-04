@@ -1,29 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abounoua <abounoua@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/03 16:04:37 by abounoua          #+#    #+#             */
-/*   Updated: 2025/11/03 16:27:37 by abounoua         ###   ########lyon.fr   */
+/*   Created: 2025/11/04 09:33:09 by abounoua          #+#    #+#             */
+/*   Updated: 2025/11/04 09:38:59 by abounoua         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+typedef struct s_point
 {
-	while (*s1 == *s2 && *s1 && *s2)
-	{
-		s1++;
-		s2++;
-	}
-	return ((unsigned char)*s1 - (unsigned char)*s2);
-}
-/*
-#include <stdio.h>
-int	main(void)
-{
-	printf("%d\n", ft_strcmp("Salut", "Salut"));
-	printf("%d\n", ft_strcmp("Saluu", "Salut"));
-	printf("%d\n", ft_strcmp("Salut\xFF", "Salut9"));
-}*/
+	int	x;
+	int	y;
+}	t_point;
