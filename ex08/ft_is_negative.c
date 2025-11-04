@@ -6,18 +6,18 @@
 /*   By: abounoua <abounoua@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 14:50:13 by abounoua          #+#    #+#             */
-/*   Updated: 2025/11/03 15:22:16 by abounoua         ###   ########lyon.fr   */
+/*   Updated: 2025/11/04 14:55:25 by abounoua         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
 	if (n < 0)
-		write(1, "N", 1);
+		ft_putchar('N')
 	else
-		write(1, "P", 1);
+		ft_putchar('P')
 }
 /*
 int	main(void)
